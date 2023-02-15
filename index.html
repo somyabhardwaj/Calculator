@@ -7,22 +7,26 @@
     <title>Calculator</title>
     <link rel = "stylesheet" href = "style.css">
 </head>
-<body >
+<body onload="open()">
     <script src="script.js"></script>
-   <h1>Calculator</h1>
-    <h2>Adding Two Numbers</h2>
+   <h1 id ="h1">Calculator</h1>
+   
     <section id="sec">
     <form id="additionForm">
         <label for="num1">First Number:</label>
-        <input type="number" id="num1" name="num1"><br><br>
-        <label for="num2">Second Number:</label>
-        <input type="number" id="num2" name="num2"><br><br>
-        
-        <button id = "btn" type="button" onclick="addNumbers()">Add Numbers</button>
-    
+        <input type="number" id="num1" name="num1" placeholder ="input numeric value"><br><br>
+        <label for="num2" >Second Number:</label>
+        <input type="number" id="num2" name="num2" placeholder ="input numeric value"><br><br>
+        <div id = "divBtn" >
+        <button  type="button" onclick="Sum()">Add Numbers</button>
+        <button  type="button" onclick="Multiply()">Multiply</button>
+        <button  type="button" onclick="Substract()">Sustract</button>
+        <button  type="button" onclick="Divide()">Divide</button>
+    </div>
+    <p id ="result"></p>
     </form>
       </section>
 
-      <p id="result"></p>
+
 </body>
 </html>
